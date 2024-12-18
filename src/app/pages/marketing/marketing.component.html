@@ -1,0 +1,37 @@
+<section class="relative min-h-screen flex items-center">
+    <div class="absolute inset-0">
+      <img
+        [src]=""
+        [alt]=""
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/50"></div>
+    </div>
+    <div class="container mx-auto px-4 relative z-10 text-white">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">Demo</h1>
+      <p class="text-xl md:text-2xl text-gray-200 max-w-2xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid atque, veniam asperiores iure, quam quia nobis sunt commodi ipsum expedita maiores!
+      </p>
+    </div>
+  </section>
+
+<!-- Content -->
+<section class="py-24">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Lorem, ipsum.</h2>
+        <p class="text-xl text-gray-600 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, non.</p>
+        
+        <div class="flex overflow-x-auto space-x-6 pb-6">
+          <div *ngFor="let image of [1,2,3,4,5,]; let i = index" class="flex-none w-96 relative aspect-video">
+            <img
+              [src]=""
+              [alt]=" + ' ' + (i + 1)"
+              class="object-cover rounded-lg w-full h-full"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
