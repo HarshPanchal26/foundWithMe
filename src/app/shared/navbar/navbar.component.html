@@ -7,23 +7,24 @@
                 </span>
             </a>
 
-            <div class="hidden md:flex items-center space-x-8">
+            <div class="hidden md:flex items-end space-x-8">
                 @for (item of navigation; track $index) {
-                <li routerLink={{item.href}} routerLinkActive="active"
-                    class="text-sm hover:text-gray-600 transition-colors">
+                <a routerLink={{item.href}} routerLinkActive="active"
+                    class="text-sm hover:text-gray-600 transition-colors cursor-pointer underline
+                    bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                     {{item.name}}
-                </li>
+                </a>
                 }
             </div>
 
-            <div class="flex items-center space-x-4">
-                <button class="p-2 hover:bg-gray-100 rounded-full">
+            <div class="md:hidden flex items-center space-x-4">
+                <!-- <button class="p-2 hover:bg-gray-100 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="11" cy="11" r="8" />
                         <path d="m21 21-4.3-4.3" />
                     </svg>
-                </button>
+                </button> -->
                 <button class="md:hidden p-2 hover:bg-gray-100 rounded-full">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

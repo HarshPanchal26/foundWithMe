@@ -20,39 +20,27 @@ export class HomeComponent {
 
   services :services[] = [
     {
-      name: 'Marketing',
-      description: 'Strategic digital marketing solutions',
+      name: 'Data Driven Approach',
+      description: 'Data Driven Approach',
       href: '/assets/images/marketing-thumb.jpg',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU'
     },
     {
-      name: 'Branding',
-      description: 'Build and evolve your brand identity',
+      name: 'Tech Adoption',
+      description: 'Tech Adoption',
       href: '/assets/images/branding-thumb.jpg',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU'
       
     },
     {
-      name: 'SEO',
-      description: 'Improve your search engine visibility',
+      name: 'Mindful Marketing',
+      description: 'Mindful marketing',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU',
       href: '/services/seo'
     },
     {
-      name: 'Tech Support',
-      description: 'Comprehensive technical solutions',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU',
-      href: '/services/tech-support'
-    },
-    {
-      name: 'Growth',
-      description: 'Scale your business with proven strategies',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU',
-      href: '/services/growth'
-    },
-    {
-      name: "CEO's Office",
-      description: 'Executive support and strategic planning',
+      name: "Management",
+      description: 'Management for everything',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX8ocYAz_fP15VXieo8g4Gxtf8V1zuPJvS3tCP72JpyeyyYL6yzQPza8iFnm8JxonbDZ4&usqp=CAU',
       href: '/services/ceo-office'
     }

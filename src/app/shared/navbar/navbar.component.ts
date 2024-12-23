@@ -12,13 +12,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 export class NavbarComponent {
   navigation = [
-    { name: 'Marketing', href: '/services/marketing' },
-    { name: 'Branding', href: '/services/branding' },
-    { name: 'SEO', href: '/services/seo' },
-    { name: 'Tech Support', href: '/services/tech-support' },
-    { name: 'Growth', href: '/services/growth' },
-    { name: "CEO's Office", href: '/services/ceo-office' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-  ];
+    { name: 'How do we help ?', href: '/how-do-we-help' },
+    { name: 'Why Agency ?', href: '/why-agency' },
+    { name: 'Why ME ?', href: '/why-me' }
+    // { name: 'SEO', href: '/seo' },
+   ];
 }

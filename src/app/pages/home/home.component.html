@@ -23,17 +23,17 @@
  <!-- Hero Section  -->
 
  <!-- About Section -->
- <section class="py-24 bg-white">
+ <section class="py-24 bg-gray-300">
     <div class="container mx-auto px-4">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-8">
-          <h2 class="text-4xl font-bold">Who We Are</h2>
+          <h2 class="text-4xl font-bold">Why we need Agency ?</h2>
           <p class="text-xl text-gray-600">
             We are passionate about transforming businesses through innovative solutions. 
             Our team combines technical expertise with creative thinking to deliver 
             results that exceed expectations.
           </p>
-          <div class="grid grid-cols-2 gap-8">
+          <!-- <div class="grid grid-cols-2 gap-8">
             <div>
               <h3 class="text-3xl font-bold text-gray-900 mb-2">150+</h3>
               <p class="text-gray-600">Projects Completed</p>
@@ -42,9 +42,9 @@
               <h3 class="text-3xl font-bold text-gray-900 mb-2">98%</h3>
               <p class="text-gray-600">Client Satisfaction</p>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="relative h-[600px] rounded-2xl overflow-hidden">
+        <div class="relative h-[400px] rounded-2xl overflow-hidden">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-Ugo0RA7duc5ueVuXE8kEBoZi6oKgO4SeCGq2a88m_JU6aRjUjguoj-C5pxiARJHQg173Eqs_bztiWqvm23glg"
             alt="Our Team"
@@ -59,14 +59,18 @@
 <!-- Services -->
 <section class="py-24 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">Our Services</h2>
+      <h2 class="text-4xl font-bold text-center mb-12">
+        <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          How Agency will help to grow your business ?
+        </span> 
+      </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <a *ngFor="let service of services" [routerLink]="service.href" class="group">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform group-hover:scale-105">
-            <div class="relative h-48">
+          <div class="p-1 bg-white rounded-lg shadow-md overflow-hidden transition-transform transform group-hover:scale-105">
+            <div class="relative h-40">
               <img
-                [src]="service.image"
-                [alt]="service.name"
+                src="../../../assets/Seo.png"
+                alt="image"
                 class="object-cover w-full h-full"
               />
             </div>
@@ -82,20 +86,43 @@
 <!-- Services -->
 
 
+<section class="py-24 bg-gray-300">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <h2 class="text-4xl font-bold">Our Views !!!</h2>
+        <p class="text-xl text-gray-600">
+          We are passionate about transforming businesses through innovative solutions. 
+          Our team combines technical expertise with creative thinking to deliver 
+          results that exceed expectations.
+        </p>
+      </div>
+      <!-- <div class="relative h-[400px] rounded-2xl overflow-hidden">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-Ugo0RA7duc5ueVuXE8kEBoZi6oKgO4SeCGq2a88m_JU6aRjUjguoj-C5pxiARJHQg173Eqs_bztiWqvm23glg"
+          alt="Our Team"
+          class="object-cover w-full h-full"
+        />
+      </div> -->
+    </div>
+  </div>
+</section>
+
+
 <!-- Message Section -->
-<section class="py-24 bg-gray-50">
+<section class="p-5 bg-gray-50">
     <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-6xl mx-auto border border-black">
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <div class="relative aspect-square rounded-full overflow-hidden">
             <img
-              src="https://static.toiimg.com/thumb/msid-114200278,width-400,resizemode-4/114200278.jpg"
+              src=""
               alt="Founder"
               class="object-cover w-full h-full"
             />
           </div>
           <div class="space-y-6">
-            <h2 class="text-4xl font-bold">A Message from Our Founder</h2>
+            <h2 class="text-4xl font-bold">Our Views</h2>
             <blockquote class="text-xl text-gray-600 italic">
               "Our mission is to empower businesses with the tools and strategies 
               they need to thrive in today's digital landscape. We believe in 
