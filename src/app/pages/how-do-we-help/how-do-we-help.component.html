@@ -1,37 +1,52 @@
-<section class="relative min-h-screen flex items-center">
-    <div class="absolute inset-0">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuP8Qmk0WQew1bgICrDEuqAidjAUctNSR8A&s"
-        [alt]=""
-        class="w-full h-full object-cover"
-      />
-      <div class="absolute inset-0 bg-black/50"></div>
-    </div>
-    <div class="container mx-auto px-4 relative z-10 text-white">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6">Demo</h1>
-      <p class="text-xl md:text-2xl text-gray-200 max-w-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid atque, veniam asperiores iure, quam quia nobis sunt commodi ipsum expedita maiores!
-      </p>
-    </div>
-  </section>
+<section class="relative h-[70vh] flex items-center justify-center bg-black">
+  <div class="absolute inset-0">
+    <video autoplay muted loop class="object-cover w-full h-full">
+      <source src="assets/video/we_can_do_it.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black/30"></div>
+  </div>
+  <div class="container mx-auto px-4 relative z-10 text-center top-10">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
+      Welcome to Our Journey
+    </h1>
+    <p class="text-lg md:text-2xl text-gray-200 mt-4 max-w-2xl mx-auto drop-shadow-md">
+      Transforming ideas into reality with innovation, creativity, and a passion for excellence.
+    </p>
+  </div>
+</section>
 
-<!-- Content -->
-<section class="py-24">
-    <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Lorem, ipsum.</h2>
-        <p class="text-xl text-gray-600 mb-12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, non.</p>
-        
-        <div class="flex overflow-x-auto space-x-6 pb-6">
-          <div *ngFor="let image of [1,2,3,4,5,]; let i = index" class="flex-none w-96 relative aspect-video">
-            <img
-              src=""
-              [alt]=" + ' ' + (i + 1)"
-              class="object-cover rounded-lg w-full h-full"
-            />
+<!-- Content Section -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
+        Our Story
+      </h2>
+      <p class="text-lg text-gray-600 leading-relaxed mb-12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt, repudiandae modi cum
+        labore necessitatibus fugiat voluptatibus adipisci nemo recusandae quas, veniam, illo aut
+        maiores! Quidem laborum perferendis voluptatem non?
+      </p>
+
+      <div class="flex flex-wrap gap-6 justify-center">
+        <div
+          *ngFor="let image of [1, 2, 3, 4, 5]; let i = index"
+          class="w-full md:w-[45%] lg:w-[30%] bg-white shadow-md rounded-lg overflow-hidden"
+        >
+          <video autoplay muted loop class="w-full h-48 object-cover">
+            <source src="/assets/video/we_are_here_to_help.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-800">Video {{ i + 1 }}</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lacus non mi
+              pharetra vehicula.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>

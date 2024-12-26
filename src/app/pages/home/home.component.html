@@ -1,141 +1,314 @@
-<!-- <app-hero-section></app-hero-section>
-<app-about-section></app-about-section>
-<app-our-services></app-our-services>
-<app-founders-message></app-founders-message> -->
-
 <!-- Hero Section  -->
-<section class="min-h-screen flex items-center bg-white">
-    <div class="container mx-auto px-4">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 max-w-4xl">
-        <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          foundWithMe
-        </span>
-        <br />
-        <span class="text-gray-900">
-          Creating value beyond expectations
-        </span>
-      </h1>
-      <p class="text-xl md:text-2xl text-gray-600 max-w-2xl">
-        Let's deliver on the promise of technology from strategy to scale.
-      </p>
-    </div>
-  </section>
- <!-- Hero Section  -->
-
- <!-- About Section -->
- <section class="py-24 bg-gray-300">
-    <div class="container mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8">
-          <h2 class="text-4xl font-bold">Why we need Agency ?</h2>
-          <p class="text-xl text-gray-600">
-            We are passionate about transforming businesses through innovative solutions. 
-            Our team combines technical expertise with creative thinking to deliver 
-            results that exceed expectations.
-          </p>
-          <!-- <div class="grid grid-cols-2 gap-8">
-            <div>
-              <h3 class="text-3xl font-bold text-gray-900 mb-2">150+</h3>
-              <p class="text-gray-600">Projects Completed</p>
-            </div>
-            <div>
-              <h3 class="text-3xl font-bold text-gray-900 mb-2">98%</h3>
-              <p class="text-gray-600">Client Satisfaction</p>
-            </div>
-          </div> -->
-        </div>
-        <div class="relative h-[400px] rounded-2xl overflow-hidden">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-Ugo0RA7duc5ueVuXE8kEBoZi6oKgO4SeCGq2a88m_JU6aRjUjguoj-C5pxiARJHQg173Eqs_bztiWqvm23glg"
-            alt="Our Team"
-            class="object-cover w-full h-full"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
- <!-- About Section -->
-
-<!-- Services -->
-<section class="py-24 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center mb-12">
-        <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          How Agency will help to grow your business ?
-        </span> 
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a *ngFor="let service of services" [routerLink]="service.href" class="group">
-          <div class="p-1 bg-white rounded-lg shadow-md overflow-hidden transition-transform transform group-hover:scale-105">
-            <div class="relative h-40">
-              <img
-                src="../../../assets/Seo.png"
-                alt="image"
-                class="object-cover w-full h-full"
-              />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">{{service.name}}</h3>
-              <p class="text-gray-600">{{service.description}}</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-<!-- Services -->
-
-
-<section class="py-24 bg-gray-300">
-  <div class="container mx-auto px-4">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-8">
-        <h2 class="text-4xl font-bold">Our Views !!!</h2>
-        <p class="text-xl text-gray-600">
-          We are passionate about transforming businesses through innovative solutions. 
-          Our team combines technical expertise with creative thinking to deliver 
-          results that exceed expectations.
-        </p>
-      </div>
-      <!-- <div class="relative h-[400px] rounded-2xl overflow-hidden">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-Ugo0RA7duc5ueVuXE8kEBoZi6oKgO4SeCGq2a88m_JU6aRjUjguoj-C5pxiARJHQg173Eqs_bztiWqvm23glg"
-          alt="Our Team"
-          class="object-cover w-full h-full"
-        />
-      </div> -->
+<section class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-purple-100 relative">
+  <!-- Background Video or Image -->
+  <div class="absolute inset-0 z-0">
+    <video autoplay muted loop class="w-full h-full object-cover opacity-20">
+      <source src="assets/video/we_are_here_to_help.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <!-- Overlay for Better Contrast -->
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/70 to-white"></div>
+  
+  <!-- Content -->
+  <div class="container mx-auto px-6 relative z-10 text-center lg:text-left">
+    <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-8 max-w-4xl mx-auto lg:mx-0">
+      <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        foundWithMe
+      </span>
+      <br />
+      <span class="text-gray-900">
+        Creating Value Beyond Expectations
+      </span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto lg:mx-0 mb-12">
+      Let's deliver on the promise of technology from strategy to scale.
+    </p>
+    <div class="space-x-4 hidden">
+      <a
+        href="#services"
+        class="px-8 py-4 bg-blue-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300"
+      >
+        Get Started
+      </a>
+      <a
+        href="#about"
+        class="px-8 py-4 bg-gray-200 text-gray-700 text-lg font-semibold rounded-lg shadow-md hover:bg-gray-300 transition duration-300"
+      >
+        Learn More
+      </a>
     </div>
   </div>
 </section>
+<!-- Hero Section -->
 
+<!-- About Section -->
+<section class="py-24 bg-gray-100 lg:rounded-t-full shadow-lg">
+  <div class="mx-auto px-6 max-w-7xl">
+    <div class="bg-white lg:rounded-3xl shadow-md p-10 flex flex-col lg:flex-row items-center gap-12">
+      <!-- Left Side: Text -->
+      <div class="text-center lg:text-left space-y-6">
+        <h2 class="text-4xl font-extrabold text-gray-800">
+          Why to Choose <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">any</span> Agency?
+        </h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          At our agency, we redefine innovation by blending technical expertise
+          with creative solutions. Our mission is to empower businesses to
+          achieve exceptional results and transform challenges into
+          opportunities for growth and success.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              150+ Successful Projects
+            </span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-blue-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              98% Client Satisfaction
+            </span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-yellow-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              Creative & Strategic Solutions
+            </span>
+          </li>
+        </ul>
+      </div>
 
-<!-- Message Section -->
-<section class="p-5 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto border border-black">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="relative aspect-square rounded-full overflow-hidden">
-            <img
-              src=""
-              alt="Founder"
-              class="object-cover w-full h-full"
-            />
-          </div>
-          <div class="space-y-6">
-            <h2 class="text-4xl font-bold">Our Views</h2>
-            <blockquote class="text-xl text-gray-600 italic">
-              "Our mission is to empower businesses with the tools and strategies 
-              they need to thrive in today's digital landscape. We believe in 
-              creating lasting partnerships that drive meaningful growth."
-            </blockquote>
-            <div class="space-y-1">
-              <p class="font-semibold">Jane Doe</p>
-              <p class="text-gray-600">Founder & CEO</p>
-            </div>
-          </div>
-        </div>
+      <!-- Right Side: Image/Vector -->
+      <div class="relative h-[350px] lg:h-auto w-full lg:w-[50%] rounded-3xl overflow-hidden">
+        <div class="flex justify-center items-center h-20 w-20 mx-auto rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6-2a9 9 0 11-6-3m1 4a5 5 0 11-4 0m2 5l2-3h-6l2 3z" />
+          </svg>
+        </div>        
       </div>
     </div>
-  </section>
-<!-- Message Section -->
+  </div>
+</section>
+<!-- About Section -->
 
+<!-- Services -->
+<section class="py-24 bg-gradient-to-b from-gray-50 to-gray-100">
+  <div class="container mx-auto px-6 max-w-7xl">
+    <!-- Heading -->
+    <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-16">
+      <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+        The Areas : in which we can help you !
+      </span>
+    </h2>
+
+    <!-- Pillars -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Data-Driven Approach -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center group transform transition-transform hover:scale-105">
+        <div class="flex justify-center items-center h-20 w-20 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-.01m6-4H5v2h14m0 4H9v2h6m4-6H9v2h10m-4-4H5v2h6m-4 4H5v2h6" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 group-hover:text-blue-500">
+          Data-Driven Approach
+        </h3>
+        <p class="text-gray-600">
+          Leverage actionable insights and analytics to make informed decisions and grow your business effectively.
+        </p>
+      </div>
+
+      <!-- Tech Adoption -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center group transform transition-transform hover:scale-105">
+        <div class="flex justify-center items-center h-20 w-20 mx-auto rounded-full bg-gradient-to-r from-green-500 to-teal-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21h6v-4a2 2 0 00-2-2h-2a2 2 0 00-2 2v4zm5-6V8a5 5 0 10-10 0v7" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 group-hover:text-green-500">
+          Tech Adoption
+        </h3>
+        <p class="text-gray-600">
+          Embrace cutting-edge technologies to stay ahead and streamline your operations for better efficiency.
+        </p>
+      </div>
+
+      <!-- Mindful Marketing -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center group transform transition-transform hover:scale-105">
+        <div class="flex justify-center items-center h-20 w-20 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10l1-1m8-2l4-4m-4 4V3M7 12h2m4-2h2m2 4H3m4 2H5" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 group-hover:text-pink-500">
+          Mindful Marketing
+        </h3>
+        <p class="text-gray-600">
+          Drive impactful and ethical marketing campaigns that truly resonate with your target audience.
+        </p>
+      </div>
+
+      <!-- Management -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center group transform transition-transform hover:scale-105">
+        <div class="flex justify-center items-center h-20 w-20 mx-auto rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-9a3 3 0 100 6 3 3 0 000-6zm2 12a2 2 0 11-4 0" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-4 group-hover:text-yellow-500">
+          Management
+        </h3>
+        <p class="text-gray-600">
+          Enhance your team and operational management for sustainable growth and efficiency.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services -->
+
+<!-- Vision Section -->
+<section class="py-24 bg-gray-100 lg:rounded-b-full shadow-lg">
+  <div class="mx-auto px-6 max-w-7xl">
+    <div class="bg-white lg:rounded-3xl shadow-md p-10 flex flex-col lg:flex-row items-center gap-12">
+      <!-- Left Side: Text -->
+      <div class="text-center lg:text-left space-y-6">
+        <h2 class="text-4xl font-extrabold text-gray-800">
+          Our <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Vision</span> & Passion
+        </h2>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          At the heart of our agency lies an unwavering commitment to innovation and excellence. 
+          We specialize in delivering transformative solutions that drive businesses toward a brighter, more successful future.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-blue-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              Driven by Innovation
+            </span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-green-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              Focused on Excellence
+            </span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="flex items-center justify-center w-8 h-8 bg-yellow-500 text-white rounded-full">
+              ✓
+            </span>
+            <span class="text-gray-700 text-base font-medium">
+              Empowering Future Growth
+            </span>
+          </li>
+        </ul>
+        <a href="#"
+          class="inline-block px-6 py-3 bg-blue-500 text-white text-lg font-medium rounded-full shadow-md hover:bg-blue-600 transition">
+          Learn More
+        </a>
+      </div>
+
+      <!-- Right Side: Video -->
+      <div class="relative h-[350px] lg:h-auto w-full lg:w-[50%] rounded-3xl overflow-hidden">
+        <video autoplay muted loop class="w-full h-full object-cover">
+          <source src="assets/video/vision.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Vision Section -->
+
+<!-- Our Approach to Growth -->
+<section class="py-24">
+  <div class="container mx-auto px-6 max-w-7xl">
+    <!-- Heading -->
+    <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-12">
+      <span class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Our Approach to Growth
+      </span>
+    </h2>
+    <p class="text-center text-lg text-gray-600 mb-16">
+      We follow a structured process to help your business grow strategically and sustainably.
+    </p>
+
+    <!-- Steps -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- Step 1 -->
+      <div class="group bg-white shadow-lg rounded-xl p-8 hover:shadow-xl hover:scale-105 transform transition">
+        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m-3-3H9m10-5a9 9 0 11-9 9 9 9 0 019-9z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4 group-hover:text-blue-500 transition">
+          Discovery
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed">
+          We understand your business needs, challenges, and growth potential.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="group bg-white shadow-lg rounded-xl p-8 hover:shadow-xl hover:scale-105 transform transition">
+        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16m-7 4h7m-7 4h7m-4-8H4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4 group-hover:text-purple-500 transition">
+          Strategy
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed">
+          We create tailored strategies focusing on your goals and market trends.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="group bg-white shadow-lg rounded-xl p-8 hover:shadow-xl hover:scale-105 transform transition">
+        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-gradient-to-r from-pink-500 to-red-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 0H8m4 0h4m-4 8v-4m0 4H8m4 0h4" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4 group-hover:text-pink-500 transition">
+          Implementation
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed">
+          We execute the plan with precision, leveraging the latest tools and technologies.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="group bg-white shadow-lg rounded-xl p-8 hover:shadow-xl hover:scale-105 transform transition">
+        <div class="flex items-center justify-center h-16 w-16 mx-auto rounded-full bg-gradient-to-r from-green-500 to-teal-500 text-white mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4 group-hover:text-green-500 transition">
+          Optimization
+        </h3>
+        <p class="text-gray-600 text-center leading-relaxed">
+          We continuously optimize to ensure maximum ROI and sustained growth.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Approach to Growth -->
+
+<!-- Message Section -->
