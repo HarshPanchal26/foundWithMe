@@ -15,6 +15,11 @@
                     {{item.name}}
                 </a>
                 }
+                <a routerLinkActive="active"
+                    class="text-sm hover:text-gray-600 transition-colors cursor-pointer underline
+                    bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    Contact Us
+                </a>
             </div>
 
             <div class="md:hidden flex items-center space-x-4">
@@ -37,3 +42,8 @@
         </div>
     </div>
 </nav>
+
+<!-- <app-fwd-dialog
+[isVisible]="isModalVisible"
+(hideDialog)="makeModalHide()"
+></app-fwd-dialog> -->
