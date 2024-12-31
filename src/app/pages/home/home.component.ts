@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Inject, Input , PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
@@ -16,7 +17,9 @@ type services = {
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent {
+export class HomeComponent{
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   services :services[] = [
     {
@@ -45,4 +48,41 @@ export class HomeComponent {
       href: '/services/ceo-office'
     }
   ];
+
+  ngOnInit(){
+    // if (isPlatformBrowser(this.platformId)) {
+    //   document.addEventListener("DOMContentLoaded", function () {
+    //     const words = ["Business", "Idea", "Thought", "Startup", "Vision"];
+    //     const dynamicText : HTMLElement | null = document.getElementById("dynamic-text");
+      
+    //     let wordIndex = 0;
+    //     let charIndex = 0;
+    //     let isDeleting = false;
+      
+    //     function typeEffect() {
+    //       const currentWord = words[wordIndex];
+    //       const displayText = isDeleting
+    //         ? currentWord.slice(0, charIndex--)
+    //         : currentWord.slice(0, charIndex++);
+
+    //         if(dynamicText)
+    //           dynamicText.innerText = displayText;
+      
+    //       if (!isDeleting && charIndex === currentWord.length) {
+    //         isDeleting = true;
+    //         setTimeout(typeEffect, 1000);
+    //       } else if (isDeleting && charIndex === 0) {
+    //         isDeleting = false;
+    //         wordIndex = (wordIndex + 1) % words.length;
+    //         setTimeout(typeEffect, 500);
+    //       } else {
+    //         setTimeout(typeEffect, isDeleting ? 50 : 150);
+    //       }
+    //     }
+      
+    //     typeEffect();
+    //   });
+    // }
+    
+  }
 }
