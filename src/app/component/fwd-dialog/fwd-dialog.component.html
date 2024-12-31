@@ -1,0 +1,83 @@
+<!-- Contact Us Modal -->
+<div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex justify-center items-center z-50" *ngIf="isVisible"> 
+    <div class="bg-white rounded-lg shadow-lg w-11/12 sm:w-3/4 lg:w-1/2">
+      <!-- Modal Header -->
+      <div class="flex justify-between items-center border-b px-6 py-4">
+        <h2 class="text-2xl font-semibold text-gray-700">Contact Us</h2>
+        <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal()">×</button>
+      </div>
+      
+      <!-- Modal Content -->
+      <div class="px-6 py-6 space-y-6">
+        <!-- Email -->
+        <div class="flex items-center space-x-4">
+          <svg class="h-6 w-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12H8m0 0H5m3 0v4m0-4l3-4 3 4m-3-4v4m4 4h-4m4 0a8 8 0 01-8-8m0 0V5m8 0v4" />
+          </svg>
+          <p class="text-gray-600">
+            Email: 
+            <a href="mailto:your_email@example.com" class="text-blue-500 hover:underline">
+              your_email
+            </a>
+          </p>
+        </div>
+  
+        <!-- Phone -->
+        <div class="flex items-center space-x-4">
+          <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.625 3h10.75A2.625 2.625 0 0120 5.625v12.75A2.625 2.625 0 0117.375 21H6.625A2.625 2.625 0 014 18.375V5.625A2.625 2.625 0 016.625 3z" />
+          </svg>
+          <p class="text-gray-600">
+            Phone: 
+            <a href="tel:+1234567890" class="text-green-500 hover:underline">
+              +123 456 7890
+            </a>
+          </p>
+        </div>
+  
+        <!-- Address -->
+        <div class="flex items-center space-x-4">
+          <svg class="h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8a6 6 0 11-10 0 6 6 0 0110 0zm0 0v6.2a2 2 0 01-.735 1.582l-4 3.2a2 2 0 01-2.53 0l-4-3.2A2 2 0 015 14.2V8" />
+          </svg>
+          <p class="text-gray-600">
+            Address: 
+            <span class="text-gray-700">
+              123 Business Street, City, Country
+            </span>
+          </p>
+        </div>
+  
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-lg font-semibold text-gray-700 mb-4">Follow Us</h3>
+          <div class="flex space-x-6">
+            <!-- Facebook -->
+            <a href="#" class="text-blue-600 hover:text-blue-800">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22.675 0h-21.35C.596 0 0 .596 0 1.325v21.351C0 23.404.596 24 1.325 24h11.482v-9.293H9.691v-3.622h3.116V8.413c0-3.088 1.894-4.775 4.658-4.775 1.325 0 2.463.099 2.796.144v3.24h-1.918c-1.504 0-1.794.715-1.794 1.76v2.308h3.588l-.467 3.622h-3.121V24h6.118c.73 0 1.325-.596 1.325-1.324V1.325C24 .596 23.404 0 22.675 0z" />
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <a href="#" class="text-blue-400 hover:text-blue-600">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 4.557a9.885 9.885 0 01-2.828.775A4.932 4.932 0 0023.337 3c-.95.564-2.005.975-3.127 1.195A4.916 4.916 0 0016.62 3c-2.724 0-4.927 2.206-4.927 4.925 0 .385.045.76.126 1.122C7.728 8.833 4.1 6.859 1.671 3.882a4.92 4.92 0 00-.666 2.475c0 1.707.87 3.213 2.188 4.096a4.904 4.904 0 01-2.23-.618v.062c0 2.387 1.698 4.382 3.949 4.833a4.918 4.918 0 01-2.224.085c.626 1.955 2.444 3.378 4.6 3.415a9.869 9.869 0 01-6.105 2.105c-.398 0-.79-.023-1.175-.066A13.946 13.946 0 008.087 20c8.996 0 13.914-7.457 13.914-13.917 0-.212-.004-.424-.014-.634A9.952 9.952 0 0024 4.557z" />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="text-pink-600 hover:text-pink-800">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.206.057 1.953.246 2.416.414a4.92 4.92 0 011.808 1.08 4.92 4.92 0 011.08 1.808c.167.462.357 1.21.414 2.416.058 1.265.07 1.646.07 4.85 0 3.204-.012 3.584-.07 4.85-.057 1.206-.246 1.953-.414 2.416a4.92 4.92 0 01-1.08 1.808 4.92 4.92 0 01-1.808 1.08c-.462.167-1.21.357-2.416.414-1.265.058-1.646.07-4.85.07-3.204 0-3.584-.012-4.85-.07-1.206-.057-1.953-.246-2.416-.414a4.92 4.92 0 01-1.808-1.08 4.92 4.92 0 01-1.08-1.808c-.167-.462-.357-1.21-.414-2.416-.058-1.265-.07-1.646-.07-4.85 0-3.204.012-3.584.07-4.85.057-1.206.246-1.953.414-2.416a4.92 4.92 0 011.08-1.808 4.92 4.92 0 011.808-1.08c.462-.167 1.21-.357 2.416-.414 1.265-.058 1.646-.07 4.85-.07zm0 1.837c-3.147 0-3.506.013-4.735.067-1.092.048-1.838.232-2.297.386a3.885 3.885 0 00-1.387.826 3.885 3.885 0 00-.826 1.387c-.154.46-.338 1.205-.386 2.297-.054 1.229-.067 1.588-.067 4.735 0 3.147.013 3.506.067 4.735.048 1.092.232 1.838.386 2.297a3.885 3.885 0 00.826 1.387 3.885 3.885 0 001.387.826c.46.154 1.205.338 2.297.386 1.229.054 1.588.067 4.735.067 3.147 0 3.506-.013 4.735-.067 1.092-.048 1.838-.232 2.297-.386a3.885 3.885 0 001.387-.826 3.885 3.885 0 00.826-1.387c.154-.46.338-1.205.386-2.297.054-1.229.067-1.588.067-4.735 0-3.147-.013-3.506-.067-4.735-.048-1.092-.232-1.838-.386-2.297a3.885 3.885 0 00-.826-1.387 3.885 3.885 0 00-1.387-.826c-.46-.154-1.205-.338-2.297-.386-1.229-.054-1.588-.067-4.735-.067zm0 4.932c1.94 0 3.5 1.56 3.5 3.5s-1.56 3.5-3.5 3.5-3.5-1.56-3.5-3.5 1.56-3.5 3.5-3.5zm0 1.663a1.837 1.837 0 100 3.674 1.837 1.837 0 000-3.674zm4.183-3.918a.927.927 0 11-1.854 0 .927.927 0 011.854 0z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Modal Footer -->
+      <div class="flex justify-end items-center px-6 py-4 border-t">
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+  
