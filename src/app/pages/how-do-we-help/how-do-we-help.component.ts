@@ -13,7 +13,7 @@ export class HowDoWeHelpComponent {
 
   @ViewChild('videoPlayer') videoplayer: any;
 
-  // toggleVideo() {
-  //   this.videoplayer.nativeElement.play();
-  // }
+  toggleVideo() {
+    this.videoplayer.nativeElement.play();
+  }
 }
