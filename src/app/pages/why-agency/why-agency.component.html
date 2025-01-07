@@ -80,8 +80,8 @@
         that’s as invested in your success as you are. Let them handle the groundwork so you can pursue your vision with
         confidence and clarity.</p>
 
-      <div class="text-center mt-8">
-        <a href="#" class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Let Us Be Your 12th
+      <div class="text-center mt-8 cursor-pointer" (click)="toggleModal(true)">
+        <a class="bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Let Us Be Your 12th
           Man</a>
       </div>
 
@@ -106,3 +106,7 @@
     </div>
   </div>
 </section>
+
+<ng-content *ngIf="isModalVisible">
+  <app-fwd-dialog [isVisible]="isModalVisible" (hideDialog)="toggleModal($event)"></app-fwd-dialog>
+</ng-content>

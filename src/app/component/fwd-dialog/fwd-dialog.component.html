@@ -4,7 +4,9 @@
       <!-- Modal Header -->
       <div class="flex justify-between items-center border-b px-6 py-4">
         <h2 class="text-2xl font-semibold text-gray-700">Contact Us</h2>
-        <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal()">×</button>
+        <button class="text-black border border-red-600" (click)="hide()">
+          <i class="pi pi-times" ></i>
+        </button>
       </div>
       
       <!-- Modal Content -->
@@ -16,8 +18,8 @@
           </svg>
           <p class="text-gray-600">
             Email: 
-            <a href="mailto:your_email@example.com" class="text-blue-500 hover:underline">
-              your_email
+            <a href="mailto:{{email}}" class="text-blue-500 hover:underline">
+              {{email}}
             </a>
           </p>
         </div>
@@ -29,8 +31,8 @@
           </svg>
           <p class="text-gray-600">
             Phone: 
-            <a href="tel:+1234567890" class="text-green-500 hover:underline">
-              +123 456 7890
+            <a href="tel:+{{phone_number}}" class="text-green-500 hover:underline">
+              {{phone_number}}
             </a>
           </p>
         </div>
@@ -43,13 +45,13 @@
           <p class="text-gray-600">
             Address: 
             <span class="text-gray-700">
-              123 Business Street, City, Country
+              {{address}}
             </span>
           </p>
         </div>
   
         <!-- Social Media -->
-        <div>
+        <div class="hidden">
           <h3 class="text-lg font-semibold text-gray-700 mb-4">Follow Us</h3>
           <div class="flex space-x-6">
             <!-- Facebook -->
@@ -76,7 +78,7 @@
   
       <!-- Modal Footer -->
       <div class="flex justify-end items-center px-6 py-4 border-t">
-        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" onclick="closeModal()">Close</button>
+        <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" (click)="hide()">Close</button>
       </div>
     </div>
   </div>

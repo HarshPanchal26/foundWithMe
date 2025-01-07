@@ -1,7 +1,25 @@
-<footer class="py-6 bg-white border-t">
+<!-- <footer class="py-6 bg-white border-t">
     <div class="container mx-auto px-4">
       <p class="text-center text-sm text-gray-600">
         © {{currentYear}} foundWithMe. Transforming ideas into reality.
       </p>
     </div>
+</footer> -->
+
+<footer class="bg-gray-100 py-4 border-t border-gray-300">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
+    <!-- Left Side: Contact and Address -->
+    <div class="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+      <p>📧 <a href="mailto:{{email}}" class="text-blue-500 hover:underline">{{email}}</a></p>
+      <p>📞 <a href="tel:{{phone_number}}" class="text-blue-500 hover:underline">{{phone_number}}</a></p>
+      <p>📍 Surat - 395010, Gujarat, India</p>
+    </div>
+
+    <!-- Right Side: Company Info -->
+    <div class="mt-2 md:mt-0">
+      <p class="text-center md:text-right">© {{currentYear}} foundWithMe. Business to, A Brand.</p>
+    </div>
+  </div>
 </footer>
+
+
