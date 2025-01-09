@@ -15,7 +15,7 @@ export class FwdDialogComponent {
   @Input() isVisible: boolean = false;
 
   email: string = 'harsh.panchal.work@gmail.com';
-  phone_number: string = '+9104882613';
+  phone_number: string = '+91 9104882613';
   address: string = 'Surat, Gujarat, India';
   
   hide() {
